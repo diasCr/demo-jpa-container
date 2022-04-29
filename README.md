@@ -1,3 +1,3 @@
 # demo-jpa-container
 
-Das ist eine Demo Projekt.
+Das ist ein Demo Projekt.

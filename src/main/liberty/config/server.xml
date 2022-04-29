@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="new server">
+
+   <!-- Variables -->
+   <variable name="DB_HOST" defaultValue="localhost" />
+   <variable name="DB_PORT" defaultValue="3306" />
+   <variable name="DB_NAME" defaultValue="dashboard" />
+   <variable name="DB_USER" defaultValue="root" />
+   <variable name="DB_PASSWORD" defaultValue="geheim" />
+
+   <!-- Enable features -->
+   <featureManager>
+      <feature>webProfile-8.0</feature>
+      <feature>restConnector-2.0</feature>
+      <!--<feature>microProfile-4.1</feature>-->
+   </featureManager>
+
+   <quickStartSecurity userName="admin" userPassword="admin"/>
+
+   <!-- Database access -->
+   <library id="jdbcDriver">
+      <fileset dir="jdbc" includes="*.jar" />
+   </library>
+
+   <dataSource jndiName="jdbc/dashboard">
+      <jdbcDriver libraryRef="jdbcDriver" />
+      <properties serverName="${DB_HOST}" portNumber="${DB_PORT}" databaseName="${DB_NAME}" user="${DB_USER}" password="${DB_PASSWORD}" />
+   </dataSource>
+
+
+   <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+   <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="8443" />
+
+   <!-- Automatically expand WAR files and EAR files -->
+   <applicationManager autoExpand="true" />
+
+   <!-- Default SSL configuration enables trust for default certificates from the Java runtime -->
+   <ssl id="defaultSSLConfig" trustDefaultCerts="true" />
+</server>

@@ -1,4 +1,4 @@
-package ch.medidata.demo.rest;
+package ch.cristiano.demo.rest;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

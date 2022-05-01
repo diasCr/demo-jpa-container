@@ -1,4 +1,4 @@
-package ch.medidata.demo.jpa.container;
+package ch.cristiano.demo.jpa.container;
 
 import static org.mockito.ArgumentMatchers.any;
 import javax.persistence.EntityManager;
@@ -12,7 +12,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
-import ch.medidata.demo.jpa.container.entity.OrganizationEntity;
+
+import ch.cristiano.demo.jpa.container.OrganizationDao;
+import ch.cristiano.demo.jpa.container.Validator;
+import ch.cristiano.demo.jpa.container.entity.OrganizationEntity;
 
 @ExtendWith(MockitoExtension.class)
 public class OrganizationDaoTest {

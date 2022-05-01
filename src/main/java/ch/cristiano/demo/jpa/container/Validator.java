@@ -1,8 +1,8 @@
-package ch.medidata.demo.jpa.container;
+package ch.cristiano.demo.jpa.container;
 
 import javax.enterprise.context.RequestScoped;
 
-import ch.medidata.demo.jpa.container.entity.OrganizationEntity;
+import ch.cristiano.demo.jpa.container.entity.OrganizationEntity;
 
 @RequestScoped
 public class Validator {

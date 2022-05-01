@@ -1,12 +1,13 @@
-package ch.medidata.demo.jsf.beans;
+package ch.cristiano.demo.jsf.beans;
 
 import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import ch.medidata.demo.jpa.container.OrganizationDao;
-import ch.medidata.demo.jpa.container.entity.OrganizationEntity;
+
+import ch.cristiano.demo.jpa.container.OrganizationDao;
+import ch.cristiano.demo.jpa.container.entity.OrganizationEntity;
 
 @Named
 @RequestScoped

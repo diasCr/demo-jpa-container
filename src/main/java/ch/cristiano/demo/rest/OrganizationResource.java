@@ -1,8 +1,5 @@
-package ch.medidata.demo.rest;
+package ch.cristiano.demo.rest;
 
-import ch.medidata.demo.jpa.container.OrganizationDao;
-import ch.medidata.demo.jpa.container.entity.ApplianceEntity;
-import ch.medidata.demo.jpa.container.entity.OrganizationEntity;
 import java.net.URI;
 import java.net.URISyntaxException;
 import javax.inject.Inject;
@@ -16,6 +13,10 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+import ch.cristiano.demo.jpa.container.OrganizationDao;
+import ch.cristiano.demo.jpa.container.entity.ApplianceEntity;
+import ch.cristiano.demo.jpa.container.entity.OrganizationEntity;
 
 @Path("/organizations")
 @Produces(MediaType.APPLICATION_JSON)

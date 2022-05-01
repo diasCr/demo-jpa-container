@@ -34,7 +34,9 @@ CREATE TABLE dashboard.appliance(
 );
 
 INSERT INTO dashboard.organization(DISPLAY_NAME)
-VALUES ('MediData AG');
+VALUES ('Demo AG');
+INSERT INTO dashboard.organization(DISPLAY_NAME)
+VALUES ('Test AG');
 
 INSERT INTO dashboard.user(LASTNAME, FIRSTNAME, ORGANIZATION_ID)
 VALUES ('TestLastname', 'TestFirstname', 1);

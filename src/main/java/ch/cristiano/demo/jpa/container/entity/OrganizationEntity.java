@@ -1,4 +1,4 @@
-package ch.medidata.demo.jpa.container.entity;
+package ch.cristiano.demo.jpa.container.entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;

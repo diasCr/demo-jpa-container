@@ -1,7 +1,5 @@
-package ch.medidata.demo.jpa.container;
+package ch.cristiano.demo.jpa.container;
 
-import ch.medidata.demo.jpa.container.entity.ApplianceEntity;
-import ch.medidata.demo.jpa.container.entity.OrganizationEntity;
 import java.util.List;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -9,6 +7,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
+
+import ch.cristiano.demo.jpa.container.entity.ApplianceEntity;
+import ch.cristiano.demo.jpa.container.entity.OrganizationEntity;
 
 @RequestScoped
 public class OrganizationDao {

@@ -12,9 +12,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import ch.cristiano.demo.jpa.container.OrganizationDao;
-import ch.cristiano.demo.jpa.container.Validator;
 import ch.cristiano.demo.jpa.container.entity.OrganizationEntity;
 
 @ExtendWith(MockitoExtension.class)

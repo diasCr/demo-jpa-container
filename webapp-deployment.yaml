@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: local/webapp:1.2.0
+        image: local/webapp:1.0.0
         imagePullPolicy: Never
         ports:
         - containerPort: 9080

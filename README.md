@@ -2,15 +2,20 @@
 
 Das ist ein Demo Projekt.
 
+# Docker Installation
+TODO
+
+# Kubernetes Intallation
+
 ## Vorrausetzungen
 - Docker ist installiert
 - Kubernetes ist installiert (direkt im Docker-Desktop oder minikube)
 - Für minikube Installation siehe [Images sind nicht für Kubernetes sichtbar](#images-sind-nicht-für-kubernetes-sichtbar)
 
 ## Docker Images lokal builden
-    > docker build -t local/webapp:1.2.0 .
+    > docker build -t local/webapp:1.0.0 .
     > cd mysqldb
-    > docker build -t local/mysqldb:1.2.0 .
+    > docker build -t local/mysqldb:1.0.0 .
     > cd ..
 
 ## Kuberbenetes Komponenten installieren

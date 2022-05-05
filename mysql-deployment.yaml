@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mysqldb
-        image: local/mysqldb:1.2.0
+        image: local/mysqldb:1.0.0
         imagePullPolicy: Never
         ports:
         - containerPort: 3306

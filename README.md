@@ -109,6 +109,14 @@ Call im Browser `http://<DOMAIN>/demo-jpa-container`
 
 Call im Browser `http://<NODE_INTERNAL_IP>:30100/demo-jpa-container` or `http://localhost:30100/demo-jpa-container`
 
+## Uninstall Kubernetes components
+    > cd kubernetes
+    > kubectl delete -f .\webapp-deployment.yaml
+    > kubectl delete -f .\mysql-deployment.yaml
+    > kubectl delete -f .\mysql-secret.yaml
+    > kubectl delete -f .\mysql-configmap.yaml
+    > kubectl delete -f .\webapp-ingress.yaml
+
 ---
 
 ## Troubleshooting

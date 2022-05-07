@@ -49,6 +49,8 @@ Call im Browser `http://localhost:9180/demo-jpa-container`
     > docker ps -a
     > docker rm -f <CONTAINER_ID>
 
+---
+
 # Docker Compose installation
 ## Preconditions
 - Docker is installed
@@ -85,15 +87,14 @@ The preferred variant is the Kubernetes installation directly in the Docker desk
     > kubectl apply -f .\webapp-ingress.yaml
 
 ## Call web application
-### Via Kubernetes Node-IP address
-    # find Node internal IP address
-    > kubectl get node -o wide
+### Via Ingress host
+#### Install Ingress addon (without minikube)
+    > kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
 
-Call im Browser `http://<NODE_INTERNAL_IP>:30100/demo-jpa-container` or `http://localhost:30100/demo-jpa-container`
-
-### Via DNS with Ingress (minikube variant)
+#### Install Ingress (with minikube)
     > minikube addons enable ingress
 
+#### Configure DNS in hosts file
     # find Ingress address
     > kubectl get ingress
 
@@ -101,6 +102,12 @@ Call im Browser `http://<NODE_INTERNAL_IP>:30100/demo-jpa-container` or `http://
 	<INGRESS_IP> <domain> (i.e. demo-webapp.ch)
 
 Call im Browser `http://<DOMAIN>/demo-jpa-container`
+
+### Via Kubernetes Node-IP address
+    # find Node internal IP address
+    > kubectl get node -o wide
+
+Call im Browser `http://<NODE_INTERNAL_IP>:30100/demo-jpa-container` or `http://localhost:30100/demo-jpa-container`
 
 ---
 

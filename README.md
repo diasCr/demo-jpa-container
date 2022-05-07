@@ -77,6 +77,7 @@ The preferred variant is the Kubernetes installation directly in the Docker desk
     > cd ..
 
 ## Install Kuberbenetes components
+    > cd kubernetes
     > kubectl apply -f .\mysql-configmap.yaml
     > kubectl apply -f .\mysql-secret.yaml
     > kubectl apply -f .\mysql-deployment.yaml

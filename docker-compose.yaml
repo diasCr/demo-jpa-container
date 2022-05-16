@@ -18,4 +18,4 @@ services:
       DB_USER: mddashboard
       DB_PASSWORD: geheim
     ports:
-      - 9180:9080
+      - 9280:9080

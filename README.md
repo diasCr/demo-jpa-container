@@ -20,7 +20,7 @@ This is a demo project for educational purposes covering the following topics:
     > mvn liberty:start
 
 ## Call web application
-Call im Browser `http://localhost:9180/demo-jpa-container`
+Call im Browser `http://localhost:9080/demo-jpa-container`
 
 ## Stop application server
     > mvn liverty:stop
@@ -45,6 +45,9 @@ Call im Browser `http://localhost:9180/demo-jpa-container`
 
     > docker container run --network=demo-network -d -it -p 9180:9080 --name webapp -e DB_HOST=mysqldb -e DB_PORT=3306 -e DB_NAME=dashboard -e DB_USER=mddashboard -e DB_PASSWORD=geheim local/webapp:1.0.0
 
+## Call web application
+Call im Browser `http://localhost:9180/demo-jpa-container`
+
 ## Stop and delete containers
     > docker ps -a
     > docker rm -f <CONTAINER_ID>
@@ -58,6 +61,9 @@ Call im Browser `http://localhost:9180/demo-jpa-container`
 
 ## Start containers in background
     > docker-compose up -d
+
+## Call web application
+Call im Browser `http://localhost:9280/demo-jpa-container`
 
 ## Stop and delete containers
     > docker-compose down
